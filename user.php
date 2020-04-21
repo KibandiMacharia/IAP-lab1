@@ -13,7 +13,7 @@
             $this->first_name = $first_name;
             $this->last_name = $last_name;
             $this->city_name = $city_name;
-            $this->$link = new connect;
+            $this->$link = new $link;
         }
 
         public function setUserId(){
@@ -34,8 +34,6 @@
                return "saved";
             }else{
                 echo($this->$link->$link->error."\n");
-                // $this->$link->closeDatabase;
-                return null;
             }
         }
 
